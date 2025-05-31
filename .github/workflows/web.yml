@@ -25,11 +25,11 @@ jobs:
           cache: 'npm'
       - name: Install dependencies
         run: |
-          cd helpdesk/frontend
+          cd chat/frontend
           npm ci
       - name: Run lint
         run: |
-          cd helpdesk/frontend
+          cd chat/frontend
           npm run lint
 
   build:
@@ -46,18 +46,18 @@ jobs:
           cache: 'npm'
       - name: Install dependencies
         run: |
-          cd helpdesk/frontend
+          cd chat/frontend
           npm ci
       - name: Build project
         run: |
-          cd helpdesk/frontend
+          cd chat/frontend
           npm run build
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'helpdesk/frontend/dist'
+          path: 'chat/frontend/dist'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
