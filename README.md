@@ -1,0 +1,2 @@
+[![CI](https://github.com/tpanhh7/ahj-sse-ws/actions/workflows/web.yml/badge.svg)](https://github.com/tpanhh7/ahj-sse-ws/actions/workflows/web.yml)
+[View on GitHub Pages](https://tpanhh7.github.io/ahj-sse-ws/)
